@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio website </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/818a462558.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+
+                <img src="images/hello-gii-high-resolution-logo-color-on-transparent-background.png" class="logo">
+                <!--logo change karna haa -->
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Skills</a></li>
+                    <li><a href="#portfolio">Education</a></li>
+                    <li><a href="#contant">Contact Me</a></li>
+                    <!-- <i class="fa-solid fa-circle-xmark"></i> -->
+                    <i class="fa-sharp fa-solid fa-xmark" onclick="closemenu()"></i> <!-- cross -->
+                    <!-- times logo -->
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i> <!--  menu -->
+            </nav>
+            <div class="header-text">
+                <!-- <p>Web/App Designer</p> -->
+                <h1>Hi, I'm <span>Sakshi Kumari.....</span></h1>
+                <br><h2>While(alive){
+                <br> Eat();
+                <br> Sleep();
+                <br> Code();
+                <br>  }</h2>
+                
+            </div>
+        </div>
+    </div>
+    <!----------------- start about ------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/sakshi2.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                   <br> <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius ipsum veritatis vel dolor, laudantium nulla tempore aperiam iste accusantium quibusdam dolorem amet excepturi, delectus id maiores! Quos adipisci doloremque, deleniti quasi, aliquam rem harum est cumque temporibus incidunt ipsa perferendis omnis alias assumenda. Excepturi neque quos earum beatae sunt incidunt aut in maxime odit doloribus, ipsam laboriosam! Porro, voluptates, corrupti quidem aspernatur ad culpa nihil nisi reiciendis quis earum quam quo saepe harum repudiandae commodi. Eligendi doloribus necessitatibus mollitia provident amet quod esse alias reiciendis, nostrum sint ea itaque aut in voluptas! Nesciunt reprehenderit ipsam ex nulla sunt autem nisi maxime fuga accusamus eveniet distinctio cum culpa, non illo debitis assumenda optio amet minima! Velit dolores, ipsa voluptate accusantium ipsam quidem unde eum?</p>   <br>
+                   <div class="tab-title">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Puzzle solving</span><br>The solver is expected to put pieces together in a logical ways</li>
+                        <li><span>Volleball</span><br>Volleball is a team sport in which two players are seperated by a net.</li>
+                        <li><span>Web Development</span><br>Website designing & development is a combination of both experienceannd approach.</li>
+                </div>
+
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>Schooling</span><br>Upgraded high school, Mirzachouki</li>
+                        <li><span>Diploma</span><br>Government woman's polytechnic.</li>
+                        <li><span>Graducation</span><br>RVSCET,Jamshedpur in 2021-2025</li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -------------------------services start------------------------- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Skills</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Web design encompasses many different skills and disciplines in the production and maintenance of websites. The different areas of web design include web graphic design; user interface design; authoring, including standardised code and proprietary software; user experience design; and search engine optimization.</p>
+                    <a href="https://en.wikipedia.org/wiki/Web_design">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2> Game Design</h2>
+                    <p>Game design is the art of applying design and aesthetics to create a game for entertainment or for educational, exercise, or experimental purposes. Increasingly, elements and principles of game design are also applied to other interactions, in the form of gamification.</p>
+                    <a href="https://en.wikipedia.org/wiki/Game_design">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>App Design</h2>
+                    <p>App design combines the user interface (UI) and user experience (UX). While UI lends itself to the overall style of the app (including the colors, fonts, and general look and feel), UX focuses on the actual functionality and usability. A large number of users abandon an app after using it for the first time.</p>
+                    <a href="https://en.wikipedia.org/wiki/Mobile_app_development">Learn more</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- ------------------Education start----------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Education</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work 1.jpg">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Social media is a collective term for websites and applications that focus on communication, community-based input, interaction, content-sharing and collaboration. People use social media to stay in touch and interact with friends, family and various communities.
+                        </p>
+                        <a href="https://en.wikipedia.org/wiki/Social_media"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work 2.jpg">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>Apple Music is a music, audio and video streaming service developed by Apple Inc. Users select music to stream to their device on-demand, or they can listen to existing playlists. 
+                        </p>
+                        <a href="https://en.wikipedia.org/wiki/Apple_Music"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work 3.jpg">
+                    <div class="layer">
+                        <h3>Online soapping App</h3>
+                        <p>Online shopping is a form of electronic commerce which allows consumers to directly buy goods or services from a seller over the Internet using a web browser or a mobile app.
+                        </p>
+                        <a href="https://en.wikipedia.org/wiki/Online_shopping"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="https://en.wikipedia.org/wiki/Information_technology" class="btn">More Technology</a>
+        </div>
+    </div>
+    <!-- -----------------contact---------------- -->
+    <div id="contant">
+        <div class="container">
+            <div class="row">
+                <div class="contant-left">
+                    <h1 class="sub-title">Contant Me</h1>
+                    <br>
+                    <p><i class="fa-solid fa-paper-plane"><br></i> shakshik805@gmail.com</p>
+                    <div class="social-icons">
+                        <a href="https://instagram.com/_sakshi_kumari123?igshid=NTc4MTIwNjQ2YQ=="><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/sakshi-kumari-982939248"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Sakshi86283636383"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="#" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contant-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="Email" name="Email" placeholder="your Email" required>
+                        <textarea name="Message" rows="6" placeholder="your Message"></textarea>
+                        <button type="submit" class="btn btn2">submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Sakshi. Made with <i class="fa-solid fa-heart"></i> by Sakshi Kumari </p>
+        </div>
+    </div>
+
+
+    <!----------------------- java script ------------------>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+</body>
+    
+</html>
